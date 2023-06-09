@@ -1,0 +1,159 @@
+.container {
+    height: 100%;
+}
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%; 
+    z-index: -1;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+    padding: 0rem 2rem;
+    color: white;
+}
+
+.work {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 2rem);
+    margin-top: 2rem;
+
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            font-family: 'Heebo', sans-serif;
+        }
+
+        img {
+            width: 7.5rem;
+            height: 7.5rem;
+        }
+    }
+
+    .title {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top: 15rem;
+
+        span {
+            &:nth-child(1) {
+                font-size: 4rem;
+                font-family: 'Orbitron', sans-serif;
+                font-weight: 500;
+            }
+
+            &:nth-child(2) {
+                font-size: 2rem;
+                font-family: 'Heebo', sans-serif;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+
+.interview {
+    height: calc(100vh);
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap-reverse;
+
+    .calendar {
+        flex-grow: 1;
+        flex-basis: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15rem;
+        svg {
+            cursor: pointer;
+        }
+    }
+
+    .info {
+        flex-grow: 1;
+        flex-basis: 0;
+        display: flex;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 1rem;
+        font-family: 'Heebo', sans-serif;
+        letter-spacing: -0.5;
+
+        span {
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 500;
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        p {
+            margin: 0rem;
+            max-width: 30rem;
+            text-align: justify;
+        }
+    }
+}
+
+.contact {
+    height: calc(100vh);
+    padding: 0rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+
+    .title {
+        font-family: 'Orbitron', sans-serif;
+        font-weight: 500;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0rem;
+        gap: 2rem;
+        display: flex;
+        flex-direction: column;
+
+        li {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+
+            span {
+                &:first-child {
+                    user-select: none;
+                    font-family: 'Orbitron', sans-serif;
+                    font-weight: 500;
+                    font-size: 1.5rem;
+                }
+
+                &:last-child {
+                    display: flex;
+                    gap: 0.5rem;
+                    font-size: 1rem;
+                    align-items: center;
+                    font-family: 'Heebo', sans-serif;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
