@@ -1,0 +1,56 @@
+.calendary {
+  button {
+    border: none;
+    border-color: #474747;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-family: "Inter", sans-serif;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #0396bb inset, 0 0 0 0 #3498db;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+    &:hover {
+      box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+      background-color: transparent;
+    }
+    letter-spacing: -0.5px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .scheduale {
+    background-color: rgba(0, 0, 0, 0.37);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    position: fixed;
+    left: 0;
+    &.noable {
+      display: none;
+    }
+    .btnclose {
+      width: 100vw;
+      position: relative;
+      svg {
+        background-color: transparent;
+        position: absolute;
+        top: 0;
+        top: 1rem;
+        right: 2rem;
+        padding: 8px;
+        font-size: 1.5rem;
+        border-radius: 10px;
+        color: white;
+        cursor: pointer;
+        box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #0396bb;
+        -webkit-transition: all 150ms ease-in-out;
+        transition: all 150ms ease-in-out;
+        &:hover {
+          -webkit-transition: all 150ms ease-in-out;
+          transition: all 150ms ease-in-out;
+          background-color: #3498db;
+        }
+      }
+    }
+  }
+}
