@@ -1,0 +1,48 @@
+.calendary {
+    background-color: #030213;
+    height: 3rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    .content {
+        max-width: 1000px;
+        width: 100%;
+        display: flex;
+        gap: 1rem;
+        margin: auto;
+        padding: 0rem 1rem;
+        div {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+
+            svg {
+                font-size: 1.25rem;
+                color: #11ddf5;
+            }
+            span {
+                font-size: 14px;
+                user-select: none;
+                @media screen and (max-width: 775px) {
+                    display: none;
+                }
+            }
+            &.special {
+                display: flex;
+                flex-direction: row-reverse;
+                align-items: center;
+                margin-left: auto;
+                color: #11ddf5;
+                svg {
+                    color: #8c8c8c;
+
+                    &:hover {
+                        color: #11ddf5;
+                        cursor: pointer;
+                        transition: all 150ms ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+}
