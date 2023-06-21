@@ -73,9 +73,11 @@
                     height: 100%;
                     padding-top: 2rem;
                     padding-left: 0.5rem;
-
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                     img {
-                        width: 100%;
+                        width: 80%;
                         height: 100%;
                     }
                 }
@@ -185,8 +187,8 @@
             justify-content: center;
 
             img {
-                width: 150px;
-                height: 70px;
+                width: 175px;
+                height: 80px;
             }
         }
 
