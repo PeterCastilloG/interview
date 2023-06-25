@@ -4,6 +4,15 @@
     color: white;
     display: flex;
     align-items: center;
+    position: fixed;
+    width: 100vw;
+    background-color: #030213;
+    z-index: 5;
+    transition: top 200ms ease-in-out;
+    top: 0;
+    &.noshow {
+        top:-100%;
+    }
     .content {
         max-width: 1000px;
         width: 100%;
