@@ -36,7 +36,7 @@ export default function Home() {
           <div className={style.info}>
             <span>¡BIENVENIDO A GLOBAL S1!</span>
             <h1>Entrevista <span>Laboral</span> Developer Full Stack</h1>
-            <span>Postula ahora y sé parte de nuestra historia de éxito.</span>
+            <p>Postula ahora y sé parte de nuestra historia de éxito.</p>
           </div>
         </div>
       </section>
@@ -44,7 +44,7 @@ export default function Home() {
         <div className={style.content}>
           <h2>Queremos Conocerte.</h2>
           <div className={style.info}>
-            <p>Nos sentimos entusiasmados de tenerte en este punto del proceso y estamos buscamos conocer más sobre ti, tus experiencias, tus habilidades y cómo podrías enriquecer nuestro equipo, así explorar a profundidad tu potencial y alinear tus principios y valores con los nuestros.
+            <p>Nos sentimos entusiasmados de tenerte en este punto del proceso y estamos buscando conocer más sobre ti, tus experiencias, tus habilidades y cómo podrías enriquecer nuestro equipo, así explorar a profundidad tu potencial y alinear tus principios y valores con los nuestros.
               A través de este sistema, podrás seleccionar la fecha y el horario que mejor se adapte a tu disponibilidad.</p>
             <div className={style.calendar}>
               <Calendary text="Agendar tu entrevista" />
